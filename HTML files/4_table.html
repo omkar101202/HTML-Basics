@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        table,tr,td,th{
+            border:1px solid black;
+            border-collapse: collapse;
+            caption-side: bottom;
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+        <caption>My Table1</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Heading</th>
+                <th colspan="2">Students</th>
+                <th colspan="2">Details</th>
+            </tr>
+                
+            <tr>
+                    <th>Id </th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Roll Number</th>
+            </tr> 
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="4">Student List</td>
+                <td>1</td>
+                <td>victor</td>
+                <td>CSE</td>
+                <td>12345</td>
+
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>victor</td>
+                <td>CSE</td>
+                <td>12345</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>victor</td>
+                <td>CSE</td>
+                <td>12345</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>victor</td>
+                <td>CSE</td>
+                <td>12345</td>
+            </tr>
+            <tr>
+                <td colspan="5">1 </td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <br>
+
+    <table>
+        <!-- colgroup is used to format one or more column at a time -->
+        <colgroup>
+            <col span="">
+            <col span="1" style="background-color: yellowgreen;">
+            <!-- to hide any column now this may depend on logic while implementation. -->
+            <col span="1" style="visibility: collapse;">
+        </colgroup>
+        <caption>My Table2</caption>
+        <thead>
+            <tr>
+               <th> month</th>
+               <th>weekday</th>
+               <th>time</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <table>
+        <caption>My Table3</caption>
+        <thead>
+              <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+              </tr>
+                <th colspan="2">shedule</th>
+                <th rowspan="2">topic</th>
+              </tr>
+              <tr>
+                <th>begin</th>
+                <th>end</th>
+              </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">monday</td>
+                <td rowspan="2">8 pm</td>
+                <td rowspan="2">5 pm</td>
+                <td> Lorem, ipsum dolor. </td>
+            </tr>
+            <tr>
+                <td> Lorem, ipsum dolor. </td>
+            </tr>
+            <tr>
+                <td rowspan="3">tuesday</td>
+                <td>8 pm</td>
+                <td>11 pm</td>
+                <td rowspan="1">xpath</td>
+            </tr>
+            <tr>
+                <td>11 pm</td>
+                <td>2 pm</td>
+                <td rowspan="2">Lorem, ipsum.</td>
+            </tr>
+            <tr>
+                <td>2pm</td>
+                <td>5 pm</td>
+            </tr>
+            <tr>
+                <td>wednesday</td>
+                <td>8 pm</td> 
+                <td>12 pm</td>
+                <td>Lorem, ipsum dolor.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+     
+</body>
+</html>

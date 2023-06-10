@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Welcome to My Form</h1>
+    <h3>Student Data</h3>
+
+    <!-- here action is for when we will submit the form it will take it to the specified action -->
+    <form action="https://thecodehelp.in" > 
+        <!-- in for we have to give the ID of input -->
+        <label for="username">username</label>  
+        <input type="text" name="username" id="username" placeholder="Enter your name">
+        <br>
+
+        <!-- input type E-mail -->
+        <label for="email">email</label>  
+        <input type="email" name="email">
+        <br>
+
+        <!-- input type number -->
+        <label for="number">Favourite Number</label>
+        <input type="number" id="number">
+        <br>
+
+        <!-- input type dropdown selector -->
+        <label for="Gender">Gender</label>
+        <select name="Gender" id="Gender">
+            <option value="select">Select</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="other">other</option>
+        </select>
+        <br>
+
+        <!-- date picker -->
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date">
+        <br>
+
+        <!-- radio buttons -->
+        <label for="Level">Level</label>
+        <input type="radio" name="Level" value="Novice"  id="Level" checked>Novice
+        <input type="radio" name="Level" value="Intermidete"  id="Level" >Intermidete
+        <input type="radio" name="Level" value="Expert"  id="Level" >Expert
+        <br>
+        
+        <!-- input type text-area -->
+        <label for="message">enter youe message</label><br>
+        <textarea name="message" id="message" cols="30" rows="5" placeholder="Write your message"></textarea>
+        <br>
+
+        <!-- submit buttons -->
+        <input type="submit" name="submit" id="submit" value="submit">
+        <input type="reset" name="reset" id="reset" value="reset">
+    </form>
+</body>
+</html>
